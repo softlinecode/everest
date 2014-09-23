@@ -11,8 +11,20 @@
         <load-on-startup>1</load-on-startup>
 	</servlet>
 
+	<servlet>
+		<servlet-name>EverestServlet</servlet-name>
+		<servlet-class>com.softline.everest.servlet.EverestServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+
+
 	<servlet-mapping>
 		<servlet-name>mvc-dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>EverestServlet</servlet-name>
+		<url-pattern>/everest</url-pattern>
 	</servlet-mapping>
 </web-app>
